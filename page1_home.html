@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+        <title>Lumo Space</title>
+        <link rel="icon" href= "images/img01_logo_light.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="margin: 0; padding: 0; height: 100%; width: 100%;">
+        <div class="navbar">
+
+            <div style="display: flex; align-items: center; padding-right: 2vw;">
+                <!-- right items in navbar -->
+                <a href="page1_home.html"><img src="images/img02_logo_dark.png" alt="Logo" style="height: 100px; margin: 10px"></a>
+                <a href="page1_home.html" class="navitem selected">Home</a>
+                <a href="page2.html" class="navitem unselected">Products</a>
+                <a href="page3.html" class="navitem unselected">Gallery</a>
+            </div>
+            
+            <div style="padding-right: 2vw;">
+                <!-- left items in navbar -->
+                <a href="page4.html" class="navitem unselected">Testimonials</a>
+                <a href="page5.html" class="navitem unselected">About Us</a>
+                <a href="page6.html" class="navitem unselected">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- my beautiful hero section, image to the right, div to the left -->
+        <section id="hero">
+            <div class="hero flex">
+                <div style="width: 50%;">
+                    <p class="paragraph">Introducing the next chapter to the Luma series</p>
+                    <h1 class="header">Luma Series <i>VII</i></h1>
+                    <a href="page2.html"><button class="button" style="cursor:pointer; margin-top: 5vh;">Learn More</button></a>
+                </div>
+
+                <img src="images/img03_hero_product.png" style="width: 40%;">
+            </div>
+        </section>
+
+        <!-- transformed section divider, made of div, overlapping with div above, tilted by 2deg to make my beautiful luma pop out -->
+         <!-- i got this idea from ex3, because wix had these options to put section dividers -->
+        <div style="background-color:#fffefb; height: 10vh; width: 100vw; transform: skewY(2deg); margin-top: -5vh;"></div>
+
+        <!-- spotlight section -->
+        <section id="spotlight" class="middle-div">
+            <h2 class="header" style="font-size: 3vw;">Spotlight</h2>
+            <!-- small line separator -->
+            <div class="text-divider"></div>
+
+            <div class="flex" style="margin-bottom: 5vh;">
+                <!-- enclosing box for 1st product -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+                    <div class="flex">
+                        <!-- text related to lumo steal -->
+                        <div style="width: 50%; padding: 25px 0;">
+                            <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh;">Lumo Steal</h3>
+                            <p class="paragraph">Unbeatable prices on premium designs—because luxury shouldn’t come at a compromise</p>
+                        </div>
+
+                        <!-- div, image inside is aligned to the center -->
+                        <div style="width: 50%; align-items: center; justify-content: center; display: flex;">
+                            <img id="img01" src="images/Brio/img01.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                        </div>
+
+                        <!-- modal of image -->
+                        <div id="modal01" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-image" id="modalImg01" src="images/Brio/img01.png" alt="Enlarged Image">
+                            </div>
+                        </div>
+                    </div>  
+
+                    <!-- name and price -->
+                    <p class="product-name" style="text-align: right;">Brio Series IV</p>
+                    <p class="product-price" style="text-align: right;">$230.00</p>
+                </div>
+
+                <!-- enclosing box for 2nd product -->
+                <div class="enclosing-box">
+                    <div class="flex">
+                        <div style="width: 50%; padding: 25px 0;">
+                            <!-- text related to new arrival -->
+                            <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh;">New Arrival</h3>
+                            <p class="paragraph">Experience the latest in design innovation, where every detail is crafted for your delight.</p>
+                        </div>
+                        <!-- div, image inside is aligned to the center -->
+                        <div style="width: 50%; align-items: center; justify-content: center; display: flex;">
+                            <img id="img02" src="images/Luma/img01.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                        </div>
+
+                        <!-- modal of image -->
+                        <div id="modal02" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img class="modal-image" id="modalImg02" src="images/Luma/img01.png" alt="Enlarged Image">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- name and price -->
+                    <p class="product-name" style="text-align: right;">Luma Series VII</p>
+                    <p class="product-price" style="text-align: right;">$450.00</p>
+                </div>
+
+                
+            </div>
+            
+        </section>
+
+        <!-- HOT PRODUCTS !!! -->
+        <section id="hot-products" class="middle-div" style="margin-top: 20vh;">
+            <h2 class="header" style="font-size: 3vw;">Hot Products</h2>
+            <!-- small line ish separator -->
+            <div class="text-divider"></div>
+
+            <!-- similar to spotlight, without the text. all 4 images are modal images -->
+
+            <div class="flex" style="margin-bottom: 5vh;">
+                <!-- enclosing box for 1st product -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+                    <!-- image -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img03" src="images/Luma/img01.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of image -->
+                    <div id="modal03" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg03" src="images/Luma/img01.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with luma series VII -->
+                    <p class="product-name" style="text-align: right;">Luma Series VII</p>
+
+                    <!-- a lil discount -->
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$500.00</p>
+                        <p class="product-price" style="text-align: right;">$450.00</p>
+                    </div>
+                </div>
+
+                <!-- enclosing box for 2nd product, new arrival -->
+                <div class="enclosing-box">
+                    <!-- image -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img04" src="images/Luma/img02.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of image -->
+                    <div id="modal04" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg04" src="images/Luma/img02.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Luma Series VI -->
+                    <p class="product-name" style="text-align: right;">Luma Series VI</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$450.00</p>
+                        <p class="product-price" style="text-align: right;">$410.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex" style="margin-bottom: 5vh;">
+                <!-- enclosing box for 3rd product -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+
+                    <!-- image of Lux Series III -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img05" src="images/Lux/img01.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of image -->
+                    <div id="modal05" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg05" src="images/Lux/img01.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with lux -->
+                    <p class="product-name" style="text-align: right;">Lux Series III</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$310.00</p>
+                        <p class="product-price" style="text-align: right;">$300.00</p>
+                    </div>
+                </div>
+
+                <!-- enclosing box for 4th product -->
+                <div class="enclosing-box">
+
+                    <!-- image of brio series V -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img06" src="images/Brio/img02.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of image -->
+                    <div id="modal06" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg06" src="images/Brio/img02.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- brio series V texts -->
+                    <p class="product-name" style="text-align: right;">Brio Series V</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$260.00</p>
+                        <p class="product-price" style="text-align: right;">$250.00</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- find your perfect lumo (perfect section), spans full width has 3 products in the middle -->
+        <!-- about the different series: luma series, brio collection, lux range -->
+          
+        <section id="perfect-lumo" style="background-color: #FFF9EF; width: 100vw; padding-top: 10vh; padding-bottom: 10vh;">
+            <!-- title and divider -->
+            <h2 class="header" style="font-size: 3vw; text-align: center;">Find Your Perfect <i>Lumo</i></h2>
+            <div class="text-divider" style="margin: 1vh auto 5vh auto;"></div>
+
+            <!-- div to group the 3 boxes -->
+            <div class="flex" style="justify-content: space-around;">
+
+                <!-- Luma -->
+                <div class="enclosing-box" style="width: 30%; margin: 0;">
+                    <!-- image of luma -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img07" src="images/Luma/img03.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of luma -->
+                    <div id="modal07" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg07" src="images/Luma/img03.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text of luma -->
+                    <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; text-align: center;">Luma Series</h3>
+                    <p class="paragraph" style="text-align: center;">Timeless elegance and unmatched craftsmanship for those who demand the very best.</p>
+                </div>
+
+                <!-- Brio -->
+                <div class="enclosing-box" style="width: 30%; margin: 0;">
+                    <!-- Image of brio -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img08" src="images/Brio/img03.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- Modal of Brio -->
+                    <div id="modal08" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg08" src="images/Brio/img03.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- Brio Texts -->
+                    <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; text-align: center;">Brio Collection</h3>
+                    <p class="paragraph" style="text-align: center;">Modern design meets everyday affordability—without compromising on quality.</p>
+                </div>
+
+                <!-- Lux -->
+                <div class="enclosing-box" style="width: 30%; margin: 0;">
+                    <!-- Image of Lux -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img09" src="images/Lux/img02.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- Modal of Lux -->
+                    <div id="modal09" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg09" src="images/Lux/img02.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- Lux Texts -->
+                    <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; text-align: center;">Lux Range</h3>
+                    <p class="paragraph" style="text-align: center;">Refined designs and superior comfort at a price that feels just right.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section for the featured collection, like hot products but its 4 images per row -->        
+        <section id="featured-collection" class="middle-div" style="margin-top: 20vh;">
+            
+            <!-- title and divider -->
+            <h2 class="header" style="font-size: 3vw;">Featured Collection</h2>
+            <div class="text-divider"></div>
+
+            <!-- row 1 -->
+            <div class="flex" style="margin-bottom: 5vh;">
+
+                <!-- Img, modal, and text for Luma Series V -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+                    <!-- image of Luma Series V -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img10" src="images/Luma/img04.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Luma Series V -->
+                    <div id="modal10" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg10" src="images/Luma/img04.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Luma Series V -->
+                    <p class="product-name" style="text-align: right;">Luma Series V</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$400.00</p>
+                        <p class="product-price" style="text-align: right;">$380.00</p>
+                    </div>
+                </div>
+
+                <!-- Img, modal, and text for Luma Series IV -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+
+                    <!-- image of Luma Series IV -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img11" src="images/Luma/img05.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Luma Series IV -->
+                    <div id="modal11" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg11" src="images/Luma/img05.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Luma Series IV -->
+                    <p class="product-name" style="text-align: right;">Luma Series IV</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$350.00</p>
+                        <p class="product-price" style="text-align: right;">$330.00</p>
+                    </div>
+                </div>
+
+                <!-- Img, modal, and text for Luma Series III -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+                        
+                    <!-- image of Luma Series III -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img12" src="images/Luma/img06.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Luma Series III -->
+                    <div id="modal12" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg12" src="images/Luma/img06.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Luma Series III -->
+                    <p class="product-name" style="text-align: right;">Luma Series III</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$300.00</p>
+                        <p class="product-price" style="text-align: right;">$280.00</p>
+                    </div>
+                </div>
+
+                <!-- Img, modal, and text for Lux Series II -->
+                <div class="enclosing-box">
+
+                    <!-- image of Lux Series II -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img13" src="images/Lux/img03.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Lux Series II -->
+                    <div id="modal13" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg13" src="images/Lux/img03.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Lux Series II -->
+                    <p class="product-name" style="text-align: right;">Lux Series II</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$280.00</p>
+                        <p class="product-price" style="text-align: right;">$260.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of row 1 -->
+
+            <!-- row 2 -->
+            <div class="flex" style="margin-bottom: 5vh;">
+                <!-- Img, modal, and text for Lux Series I -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+
+                    <!-- image of Lux Series I -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img14" src="images/Lux/img04.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Lux Series I -->
+                    <div id="modal14" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg14" src="images/Lux/img04.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Lux Series I -->
+                    <p class="product-name" style="text-align: right;">Lux Series I</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$250.00</p>
+                        <p class="product-price" style="text-align: right;">$230.00</p>
+                    </div>
+                </div>
+
+                <!-- Img, modal, and text for Brio Series I -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+
+                    <!-- image of Brio Series I -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img15" src="images/Brio/img04.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Brio Series I -->
+                    <div id="modal15" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg15" src="images/Brio/img04.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Brio Series I -->
+                    <p class="product-name" style="text-align: right;">Brio Series I</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$200.00</p>
+                        <p class="product-price" style="text-align: right;">$180.00</p>
+                    </div>
+                </div>
+
+                <!-- Img, modal, and text for Brio Series II -->
+                <div class="enclosing-box" style="margin-right: 5vw;">
+                    <!-- image of Brio Series II -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img16" src="images/Brio/img05.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Brio Series II -->
+                    <div id="modal16" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg16" src="images/Brio/img05.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Brio Series II -->
+                    <p class="product-name" style="text-align: right;">Brio Series II</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$210.00</p>
+                        <p class="product-price" style="text-align: right;">$190.00</p>
+                    </div>
+                </div>
+                
+                <!-- Img, modal, and text for Brio Series III-->
+                <div class="enclosing-box">
+                    
+                    <!-- image of Brio Series III -->
+                    <div style="width: 100%; align-items: center; justify-content: center; display: flex;">
+                        <img id="img17" src="images/Brio/img06.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                    </div>
+
+                    <!-- modal of Brio Series III -->
+                    <div id="modal17" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img class="modal-image" id="modalImg17" src="images/Brio/img06.png" alt="Enlarged Image">
+                        </div>
+                    </div>
+
+                    <!-- text associated with Brio Series III -->
+                    <p class="product-name" style="text-align: right;">Brio Series III</p>
+                    <div class="product-price-container">
+                        <p class="product-price-before" style="text-align: right;">$220.00</p>
+                        <p class="product-price" style="text-align: right;">$200.00</p>
+                    </div>
+                </div>
+                <!-- end of row 2, like a real website no? this would be better if i had Flask so i can automate this -->
+            </div>
+        </section>
+
+        <!-- footer, 5 segments for links and logo -->
+        <footer class="footer" style="padding: 30px;">
+
+            <div class="flex">
+                <!-- left side links -->
+                <div class="flex" style="width: 80vw;">
+                    <!-- everything under helpful resources -->
+                    <div style="width: 20vw;">
+                        <h3 class="header footer-text-header">Helpful Resources</h3>
+                        <ul>
+                            <li style="color:#a6a29b"><a href="https://www.architecturaldigest.com/story/how-to-clean-velvet-furniture" class="footer-text-links">How to Clean Velvet Furniture in 5 steps</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.earlofeast.com/blogs/journal/5-tips-for-styling-a-small-space" class="footer-text-links">5 Tips For Making A Small Space Home</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.thegoodtrade.com/features/eco-friendly-furniture-brands-for-a-stylish-and-conscious-home/" class="footer-text-links">9 Eco And Sustainable Furniture Companies In 2025</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- everything under design and furniture partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Design & Furniture Partners</h3>
+                        <a href="https://www.westelm.com.ph/" class="footer-text-links">West Elm</a>
+                        <a href="https://www.crateandbarrel.com/" class="footer-text-links">Crate and Barrel</a>
+                        <h3 class="header" style="color: #fffefb; font-size: 1vw; margin-top: 2vh;">Industry Partnerships</h3>
+                        <a href="https://www.asid.org/" class="footer-text-links">ASID</a>
+                        <a href="https://nkba.org/" class="footer-text-links">NKBA</a>
+                    </div>
+
+                    <!-- everything under innovation partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Innovation Partners</h3>
+                        <a href="https://nanoleaf.me/" class="footer-text-links">Nanoleaf</a>
+                        <a href="https://www.dirtt.com/" class="footer-text-links">DIRTT</a>
+                        <a href="https://www.mapua.edu.ph/" class="footer-text-links">Mapua University</a>
+                    </div>
+
+
+                    <!-- everything under inspiration and design resources -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Inspiration & Design Resources</h3>
+                        <a href="https://www.architecturaldigest.com/" class="footer-text-links">Architectural Digest</a>
+                        <a href="https://www.houzz.com/" class="footer-text-links">Houzz</a>
+                        <a href="https://ph.pinterest.com/" class="footer-text-links">Pinterest</a>
+                    </div>
+                </div>
+
+                <!-- right side logo and copyright -->
+                <div style="width: 10vw;">
+                    <img src="images/img01_logo_light.png" alt="Logo" style="height: 100px; margin: 10px">
+                    <p style="color: #a6a29b; margin: 0;">© 2024 Lumo</p>
+                    <p style="color: #a6a29b; margin: 0;">All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- this took me a while to figure out, i wasnt really that familiar with modal images prior to this project -->
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- 
+
+most pictures are from freepik, some are from pinterest, this is not a real website (yes, i made this for an exercise)
+
+planning and UI/UX design took me 6 hours (all of it was done on canva because i dont know how to figma)
+coding took more than double that, with a lot of copy pastes (it was fun)
+
+also for sure one of the best UIs ive made, so i hope you enjoy going through it all!
+
+- allen q
+
+-->

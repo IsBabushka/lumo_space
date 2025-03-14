@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+        <title>Lumo Space</title>
+        <link rel="icon" href= "images/img01_logo_light.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="margin: 0; padding: 0; height: 100%; width: 100%;">
+        <div class="navbar">
+            
+            <div style="display: flex; align-items: center; padding-right: 2vw;">
+                <!-- right items in navbar -->
+                <a href="page1_home.html"><img src="images/img02_logo_dark.png" alt="Logo" style="height: 100px; margin: 10px"></a>
+                <a href="page1_home.html" class="navitem unselected">Home</a>
+                <a href="page2.html" class="navitem selected">Products</a>
+                <a href="page3.html" class="navitem unselected">Gallery</a>
+            </div>
+            
+            <div style="padding-right: 2vw;">
+                <!-- left items in navbar -->
+                <a href="page4.html" class="navitem unselected">Testimonials</a>
+                <a href="page5.html" class="navitem unselected">About Us</a>
+                <a href="page6.html" class="navitem unselected">Contact Us</a>
+            </div>
+        </div>
+
+
+
+
+        <!-- header, taking on the style of a hero section + image map -->
+        <div class="middle-div flex" style="background-color: #fff9ef;  width: 100vw; padding-bottom: 10vh;">
+            <section id="products-hero" style="padding: 10vh 0 10vh 5vw;">
+                <h1 class="header" style="font-size: 4.5vw;">Find Your Perfect <i>Lumo Space</i></h1>
+                <p class="paragraph" style="width: 50vw; margin-bottom: 50px;">From cozy corners to statement-making rooms, our collections are designed to inspire and adapt to your unique lifestyle.</p>
+                <p class="paragraph" style="width: 50vw;">At Lumo Space, we believe every home tells a story—and we’re here to help you write yours. Whether you’re looking for luxurious designs, budget-friendly essentials, or versatile pieces that grow with you, our curated collections make it easy to create a space that feels just right.</p>
+            </section>
+            <section>
+                <div class="enclosing-box" style="width: 50%; margin: 0; padding: 0 5vw 0 0;">
+                    <img src="images/img04_lumo_furnitures.png" alt="Living Room with Lumo Space" usemap="#image-map">
+                    <i><p class="paragraph" style="margin-top: 2vh; width: 20vw;">Feel free to click on the furniture pieces to discover more about each collection.</p></i>
+                </div>
+            </section>
+        </div>
+
+        <!-- im a map, im a map, im a map, im a map, im a map! -->
+        <map name="image-map">
+            <area target="" alt="Brio Furniture" title="Brio Furniture" href="#brio" coords="126,351,116,329,125,311,138,294,164,293,191,295,202,298,212,320,210,336,198,351,188,359,193,371,200,396,194,400,181,368,166,364,152,365,146,382,136,388,145,415,137,417,126,384,115,386,118,394,110,399,109,387,66,396,55,428,47,425,58,395,50,388,38,410,31,408,44,384,15,330,24,324,53,340,91,336,113,347" shape="poly">
+            <area target="" alt="Lux Furniture" title="Lux Furniture" href="#lux" coords="212,391,212,482,237,494,237,514,248,516,248,501,406,567,440,567,440,407,388,393,344,366,327,366,285,355,300,392,292,391,280,396,241,384" shape="poly">
+            <area target="" alt="Luma Furniture" title="Luma Furniture" href="#luma" coords="274,322,306,316,304,303,333,309,350,305,350,296,357,299,359,290,399,301,418,297,421,302,438,300,439,405,388,392,344,363,326,363,285,352,283,358,271,356,271,327" shape="poly">
+        </map>
+
+        
+        <!-- luma section -->
+        <section id="luma" class="middle-div" style="margin-top: 10vh;">
+            <!-- header and divider -->
+            <h2 class="header" style="font-size: 3vw;">Luma Series</h2>
+            <div class="text-divider"></div>
+
+            <!-- container for the left side (why choose box and best for box) and right side (pictures) -->
+            <div class="flex">
+                <div style="width: 50%;">
+                    <!-- container for why choose box -->
+                    <div class="enclosing-box" style="width: 80%; margin: 0; padding: 3vw;">
+                        <!-- everything related to "why choose luma" -->
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh;">Why Choose Luma?</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Timeless elegance for every home</li>
+                            <li>Unmatched craftsmanship and attention to detail</li>
+                            <li>Premium materials designed to last</li>
+                        </ul>
+
+                        <!-- everything related to key features -->
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; margin-top: 5vh;">Key Features</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Statement-making designs that elevate your space</li>
+                            <li>Plush cushions and gold-accented legs</li>
+                            <li>Modular options for customization</li>
+                        </ul>
+                    </div>
+
+                    <!-- container for best for box -->
+                    <div class="enclosing-box" style="width: 80%; margin: 5vh 0 0 0; padding: 3vw; background-color: #7e866e; color: #fffefb;">
+                        <!-- everything related to "best for" -->
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; color: #fffefb">Best For</h3>
+                        <ul class="paragraph" style="margin-left: 3vw; color: #fffefb;">
+                            <li>Upscale living rooms</li>
+                            <li>Designer-inspired interiors</li>
+                            <li>Homes that demand sophistication</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- image for luma -->
+                <div style="width: 50%; align-items: center; justify-content: center; display: flex;">
+                    <img id="img01" src="images/Luma/img01.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                </div>
+                <!-- modal of image (oh my goodness think i just realized how screwed up my modals are) -->
+                <div id="modal01" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="modal-image" id="modalImg01" src="images/Luma/img01.png" alt="Enlarged Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of luma section -->
+
+        <!-- start of lux section -->
+        <section id="lux" class="middle-div" style="margin-top: 10vh;">
+            <!-- text and divider -->
+            <h2 class="header" style="font-size: 3vw;">The Lux Range</h2>
+            <div class="text-divider"></div>
+
+            <!-- container for left and right side -->
+            <div class="flex">
+                <!-- image (alternate) -->
+                <div style="width: 50%; align-items: center; justify-content: center; display: flex;">
+                    <img id="img02" src="images/Lux/img04.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                </div>
+
+                <!-- container for the boxes -->
+                <div style="width: 50%;">
+                    <!-- box for "why lux stands out" and "key features" -->
+                    <div class="enclosing-box" style="width: 80%; margin: 0; padding: 3vw;">
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh;">Why Lux Stands Out?</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Refined designs with a modern twist</li>
+                            <li>Plush cushions for ultimate comfort</li>
+                            <li>Mid-range pricing for accessible luxury</li>
+                        </ul>
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; margin-top: 5vh;">Key Features</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Versatile pieces that adapt to your lifestyle</li>
+                            <li>Neutral tones to match any decor</li>
+                            <li>Easy-to-clean fabrics for busy households</li>
+                        </ul>
+                    </div>
+
+                    <!-- box for best for -->
+                    <div class="enclosing-box" style="width: 80%; margin: 5vh 0 0 0; padding: 3vw; background-color: #7e866e; color: #fffefb;">
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; color: #fffefb">Best For</h3>
+                        <ul class="paragraph" style="margin-left: 3vw; color: #fffefb;">
+                            <li>Families seeking comfort and durability</li>
+                            <li>Homes with a mix of functionality and style</li>
+                            <li>Customers looking for "affordable luxury."</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- modal of image -->
+                <div id="modal02" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="modal-image" id="modalImg02" src="images/Lux/img04.png" alt="Enlarged Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brio" class="middle-div" style="margin-top: 10vh;">
+            <!-- text and divider -->
+            <h2 class="header" style="font-size: 3vw;">The Brio Collection</h2>
+            <div class="text-divider"></div>
+
+            <!-- container for left and right side -->
+            <div class="flex">
+                <!-- left side -->
+                <div style="width: 50%;">
+                    <!-- box for "what makes brio special" and "key features" -->
+                    <div class="enclosing-box" style="width: 80%; margin: 0; padding: 3vw;">
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh;">What Makes Brio Special?</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Affordable prices without sacrificing style</li>
+                            <li>Durable materials built for everyday use</li>
+                            <li>Compact designs perfect for small spaces</li>
+                        </ul>
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; margin-top: 5vh;">Key Features</h3>
+                        <ul class="paragraph" style="margin-left: 3vw;">
+                            <li>Versatile pieces that adapt to your lifestyle</li>
+                            <li>Neutral tones to match any decor</li>
+                            <li>Easy-to-clean fabrics for busy households</li>
+                        </ul>
+                    </div>
+
+                    <!-- box for best for -->
+                    <div class="enclosing-box" style="width: 80%; margin: 5vh 0 0 0; padding: 3vw; background-color: #7e866e; color: #fffefb;">
+                        <h3 class="header" style="font-size: 2vw; margin-bottom: 1vh; color: #fffefb">Best For</h3>
+                        <ul class="paragraph" style="margin-left: 3vw; color: #fffefb;">
+                            <li>First-time homeowners</li>
+                            <li>Budget-conscious shoppers</li>
+                            <li>Urban apartments and cozy spaces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- right side (image) -->
+                <div style="width: 50%; align-items: center; justify-content: center; display: flex;">
+                    <img id="img03" src="images/Brio/img02.png" style="width: 50%; border-radius: 20px; cursor: pointer;">
+                </div>
+
+                <!-- modal of image -->
+                <div id="modal03" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <img class="modal-image" id="modalImg03" src="images/Brio/img02.png" alt="Enlarged Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section for comparing collections, header, paragraph, then table with #fff9ef as bg color, fffdf8 as border color, and 3 as weight, it is 4 x 4 and spans an entire .middle-div-->
+        <section id="compare-collections" class="middle-div" style="margin-top: 10vh;">
+            <!-- header and subheader -->
+            <h2 class="header" style="font-size: 3vw;">Compare Our Collections</h2>
+            <p class="paragraph">Find the perfect fit for your home by comparing the features of our Luma, Lux, and Brio collections.</p>
+
+            <!-- compare our collections table -->
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Luma Series</th>
+                    <th>Lux Range</th>
+                    <th>Brio Collection</th>
+                </tr>
+                <tr>
+                    <td>Price Point</td>
+                    <td>Premium</td>
+                    <td>Mid-range</td>
+                    <td>Budget Friendly</td>
+                </tr>
+                <tr>
+                    <td>Materials</td>
+                    <td>Velvet, Gold Accents</td>
+                    <td>Wood, Fabric</td>
+                    <td>Polyester, Metal</td>
+                </tr>
+                <tr>
+                    <td>Best For</td>
+                    <td>Upscale Living Rooms</td>
+                    <td>Family Homes</td>
+                    <td>Small Apartments</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- another table, but for customization options, 6x4 -->
+        <section id="customization-options" class="middle-div" style="margin-top: 10vh; margin-bottom: 10vh;">
+            <!-- header and subheader -->
+            <h2 class="header" style="font-size: 3vw;">Customization Options</h2>
+            <p class="paragraph">Tailor your Lumo furniture to perfectly match your style and space with our wide range of customization options.</p>
+
+            <!-- table for customization options -->
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Luma Series</th>
+                    <th>Lux Range</th>
+                    <th>Brio Collection</th>
+                </tr>
+                <tr>
+                    <td>Materials</td>
+                    <td>Velvet, Linen, Leather</td>
+                    <td>Wood, Fabric, Metal</td>
+                    <td>Polyester, Metal, Mesh</td>
+                </tr>
+                <tr>
+                    <td>Color Palette</td>
+                    <td>Navy, Beige, Charcoal</td>
+                    <td>Natural Wood, Gray, White</td>
+                    <td>Black, White, Silver</td>
+                </tr>
+                <tr>
+                    <td>Finishes</td>
+                    <td>Matte, Glossy, Metallic</td>
+                    <td>Stained Wood, Painted</td>
+                    <td>Powder-Coated, Brushed</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                    <td>Customizable (Modular)</td>
+                    <td>Standard & Compact</td>
+                    <td>Space-Saving Designs</td>
+                </tr>
+                <tr>
+                    <td>Assembly Required</td>
+                    <td>No (Pre-Assembled)</td>
+                    <td>Minimal Assembly</td>
+                    <td>Tool-Free Assembly</td>
+                </tr>
+                <tr>
+                    <td>Accent Pillows</td>
+                    <td>Velvet, Silk</td>
+                    <td>Cotton, Linen</td>
+                    <td>Canvas, Microfiber</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <!-- footer, 5 segments for links and logo -->
+        <footer class="footer" style="padding: 30px;">
+
+            <div class="flex">
+                <!-- left side links -->
+                <div class="flex" style="width: 80vw;">
+                    <!-- everything under helpful resources -->
+                    <div style="width: 20vw;">
+                        <h3 class="header footer-text-header">Helpful Resources</h3>
+                        <ul>
+                            <li style="color:#a6a29b"><a href="https://www.architecturaldigest.com/story/how-to-clean-velvet-furniture" class="footer-text-links">How to Clean Velvet Furniture in 5 steps</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.earlofeast.com/blogs/journal/5-tips-for-styling-a-small-space" class="footer-text-links">5 Tips For Making A Small Space Home</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.thegoodtrade.com/features/eco-friendly-furniture-brands-for-a-stylish-and-conscious-home/" class="footer-text-links">9 Eco And Sustainable Furniture Companies In 2025</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- everything under design and furniture partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Design & Furniture Partners</h3>
+                        <a href="https://www.westelm.com.ph/" class="footer-text-links">West Elm</a>
+                        <a href="https://www.crateandbarrel.com/" class="footer-text-links">Crate and Barrel</a>
+                        <h3 class="header" style="color: #fffefb; font-size: 1vw; margin-top: 2vh;">Industry Partnerships</h3>
+                        <a href="https://www.asid.org/" class="footer-text-links">ASID</a>
+                        <a href="https://nkba.org/" class="footer-text-links">NKBA</a>
+                    </div>
+
+                    <!-- everything under innovation partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Innovation Partners</h3>
+                        <a href="https://nanoleaf.me/" class="footer-text-links">Nanoleaf</a>
+                        <a href="https://www.dirtt.com/" class="footer-text-links">DIRTT</a>
+                        <a href="https://www.mapua.edu.ph/" class="footer-text-links">Mapua University</a>
+                    </div>
+
+
+                    <!-- everything under inspiration and design resources -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Inspiration & Design Resources</h3>
+                        <a href="https://www.architecturaldigest.com/" class="footer-text-links">Architectural Digest</a>
+                        <a href="https://www.houzz.com/" class="footer-text-links">Houzz</a>
+                        <a href="https://ph.pinterest.com/" class="footer-text-links">Pinterest</a>
+                    </div>
+                </div>
+
+                <!-- right side logo and copyright -->
+                <div style="width: 10vw;">
+                    <img src="images/img01_logo_light.png" alt="Logo" style="height: 100px; margin: 10px">
+                    <p style="color: #a6a29b; margin: 0;">© 2024 Lumo</p>
+                    <p style="color: #a6a29b; margin: 0;">All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

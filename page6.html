@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">    
+        <title>Lumo Space</title>
+        <link rel="icon" href= "images/img01_logo_light.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="margin: 0; padding: 0; height: 100%; width: 100%;">
+        <div class="navbar">
+            
+            <div style="display: flex; align-items: center; padding-right: 2vw;">
+                <!-- right items in navbar -->
+                <a href="page1_home.html"><img src="images/img02_logo_dark.png" alt="Logo" style="height: 100px; margin: 10px"></a>
+                <a href="page1_home.html" class="navitem unselected">Home</a>
+                <a href="page2.html" class="navitem unselected">Products</a>
+                <a href="page3.html" class="navitem unselected">Gallery</a>
+            </div>
+            
+            <div style="padding-right: 2vw;">
+                <!-- left items in navbar -->
+                <a href="page4.html" class="navitem unselected">Testimonials</a>
+                <a href="page5.html" class="navitem unselected">About Us</a>
+                <a href="page6.html" class="navitem selected">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- header, taking on the style of a hero section -->
+        <div class="middle-div flex" style="background-color: #fff9ef;  width: 100vw; padding-bottom: 10vh;">
+            <section id="products-hero" style="padding: 10vh 0 10vh 5vw;">
+                <h1 class="header" style="font-size: 4.5vw;">Have an Inquiry?</h1>
+                <p class="paragraph" style="width: 50vw; margin-bottom: 50px;">We’re here to help—whether you have questions, need design advice, or want to visit our showroom.</p>
+            </section>
+        </div>
+
+        
+        <div class="middle-div">
+            <!-- header and subheader -->
+            <h2 class="header" style="font-size: 2vw; margin-top: 10vh;">Contact Us</h2>
+            <p class="paragraph">Fill out the form below and our team will get back to you within 24 hours.</p>
+
+            <div class="flex" style="margin-top: 5vh; margin-bottom: 10vh;">
+
+                <!-- form -->
+                <div style="width: 45%; border: 2px solid #3d3b3a; border-radius: 20px; padding: 2vw; background-color: #fffefb;">
+                    <form method="GET" action="page6.html">
+
+                        <!-- segment for first, middle, and last -->
+                        <div class="flex" style="margin-bottom: 2vh;">
+
+                            <!-- first name -->
+                            <div class="form-item-container" style="width: 30%;">
+                                <p class="paragraph">First Name</p>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter firstame">
+                            </div>
+                            
+                            <!-- middle initial -->
+                            <div class="form-item-container" style="width: 20%;">
+                                <p class="paragraph">Middle Initial</p>
+                                <input type="text" id="middleInitial" name="middleInitial" placeholder="Enter M.I.">
+                            </div>
+
+                            <!-- last name -->
+                            <div class="form-item-container" style="width: 30%;">
+                                <p class="paragraph">Last Name</p>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter lastname">
+                            </div>
+                        </div>
+
+                        <!-- segment for email and phone number -->
+
+                        <div class="flex" style="margin-bottom: 2vh;">
+                            <!-- email -->
+                            <div class="form-item-container" style="width: 45%;">
+                                <p class="paragraph">Email</p>
+                                <input type="email" id="email" name="email" placeholder="Enter email">
+                            </div>
+                            
+                            <!-- phone number -->
+                            <div class="form-item-container" style="width: 45%;">
+                                <p class="paragraph">Phone Number</p>
+                                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Enter phone number">
+                            </div>
+                        </div>
+
+
+                        <!-- label and radio buttons -->
+                        <div class="flex" style="margin-bottom: 2vh;">
+                            <div style="width: 30%; padding: 0 3vw; display: flex; align-items: center;">
+                                <p class="paragraph">Preferred Contact Method</p>
+                            </div>
+                            <div style="width: 70%;">
+
+                                <!-- email -->
+                                <div class="radio-div-container">
+                                    <input type="radio" id="emailRadio" name="contactMethod" value="email">
+                                    <label for="emailRadio" class="paragraph">Email</label>
+                                </div>
+                                
+                                <!-- phone -->
+                                <div class="radio-div-container">
+                                    <input type="radio" id="phoneRadio" name="contactMethod" value="phone">
+                                    <label for="phoneRadio" class="paragraph">Phone</label>
+                                </div>
+
+                                <!-- any -->
+                                <div class="radio-div-container">
+                                    <input type="radio" id="anyRadio" name="contactMethod" value="any">
+                                    <label for="anyRadio" class="paragraph">Any</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- reason for contacting, select box, 5 choices -->
+
+                        <div style="margin-bottom: 2vh;">
+                            <p class="paragraph">Reason for Contacting</p>
+                            <select id="reason" name="reason" style="margin-bottom: 2vh;">
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- message -->
+                        <p class="paragraph">Tell us how we can help you!</p>
+                        <textarea id="message" name="message" placeholder="Your Message" style="width: 100%; border: 1px solid #3d3b3a; border-radius: 5px; padding: 1vh; margin-bottom: 2vh;"></textarea>
+
+                        <!-- oh buttons! (submit and reset) -->
+                        <div class="flex">
+                            <button type="reset" class="button" style="background-color: #866e6e; width: 15vw; cursor: pointer;">Reset</button>
+                            <button type="submit" class="button" style="width: 15vw; cursor: pointer;">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+    
+                <!-- maps, points to a place close to my house -->
+                <div style="width: 45%;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.80653588934!2d120.99071218452293!3d14.380602646550495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d106147b38b9%3A0x5075e3422ed3272a!2sShakey&#39;s%20-%20Daang%20Hari!5e0!3m2!1sen!2sph!4v1741937472984!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- footer, 5 segments for links and logo -->
+        <footer class="footer" style="padding: 30px;">
+
+            <div class="flex">
+                <!-- left side links -->
+                <div class="flex" style="width: 80vw;">
+                    <!-- everything under helpful resources -->
+                    <div style="width: 20vw;">
+                        <h3 class="header footer-text-header">Helpful Resources</h3>
+                        <ul>
+                            <li style="color:#a6a29b"><a href="https://www.architecturaldigest.com/story/how-to-clean-velvet-furniture" class="footer-text-links">How to Clean Velvet Furniture in 5 steps</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.earlofeast.com/blogs/journal/5-tips-for-styling-a-small-space" class="footer-text-links">5 Tips For Making A Small Space Home</a></li>
+                            <li style="color:#a6a29b"><a href="https://www.thegoodtrade.com/features/eco-friendly-furniture-brands-for-a-stylish-and-conscious-home/" class="footer-text-links">9 Eco And Sustainable Furniture Companies In 2025</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- everything under design and furniture partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Design & Furniture Partners</h3>
+                        <a href="https://www.westelm.com.ph/" class="footer-text-links">West Elm</a>
+                        <a href="https://www.crateandbarrel.com/" class="footer-text-links">Crate and Barrel</a>
+                        <h3 class="header" style="color: #fffefb; font-size: 1vw; margin-top: 2vh;">Industry Partnerships</h3>
+                        <a href="https://www.asid.org/" class="footer-text-links">ASID</a>
+                        <a href="https://nkba.org/" class="footer-text-links">NKBA</a>
+                    </div>
+
+                    <!-- everything under innovation partners -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Innovation Partners</h3>
+                        <a href="https://nanoleaf.me/" class="footer-text-links">Nanoleaf</a>
+                        <a href="https://www.dirtt.com/" class="footer-text-links">DIRTT</a>
+                        <a href="https://www.mapua.edu.ph/" class="footer-text-links">Mapua University</a>
+                    </div>
+
+
+                    <!-- everything under inspiration and design resources -->
+                    <div style="margin-left: 5vw; width: 20vw;">
+                        <h3 class="header footer-text-header">Inspiration & Design Resources</h3>
+                        <a href="https://www.architecturaldigest.com/" class="footer-text-links">Architectural Digest</a>
+                        <a href="https://www.houzz.com/" class="footer-text-links">Houzz</a>
+                        <a href="https://ph.pinterest.com/" class="footer-text-links">Pinterest</a>
+                    </div>
+                </div>
+
+                <!-- right side logo and copyright -->
+                <div style="width: 10vw;">
+                    <img src="images/img01_logo_light.png" alt="Logo" style="height: 100px; margin: 10px">
+                    <p style="color: #a6a29b; margin: 0;">© 2024 Lumo</p>
+                    <p style="color: #a6a29b; margin: 0;">All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
